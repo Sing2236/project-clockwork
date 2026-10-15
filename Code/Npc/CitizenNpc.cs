@@ -183,23 +183,24 @@ public sealed class CitizenNpc : Component
 	/// <summary>
 	/// The body this citizen is built with.
 	///
-	/// <para>Both human and Civil Protection are real models that exist here rather than being
-	/// imported: the citizen is the schema's own <c>citizen_human</c>, and a CP unit is
-	/// <c>models/poli/metrocop.vmdl</c> from the workshop's <c>knoxshelter.metrocop</c> package. So
-	/// the faction is what decides the look, and nothing has to be converted from Source 1.</para>
+	/// <para>Everyone wears the schema's own <c>citizen_human</c>, because that is the only human
+	/// body that reliably exists here. A Civil Protection unit therefore looks like a civilian for
+	/// now; <see cref="ModelPath"/> is the hook for giving him a proper one later.</para>
+	///
+	/// <para>Why it is not already a Combine model, so nobody repeats the search. There is no
+	/// metrocop anywhere in s&box. The workshop <i>does</i> list Combine models -
+	/// <c>playermodelports.combine</c>, <c>hl2npcs.combine_soldier</c>, <c>knoxshelter.metrocop</c> -
+	/// and they install and mount, but their <b>models never register as assets</b>: only their
+	/// textures stream. <c>asset_info</c> on those paths returns <c>No asset</c>, and a model that
+	/// cannot resolve loads as the "error" model rather than failing loudly, which is how a CP unit
+	/// ends up standing there as the word "error". Verify with <c>asset_info</c> before trusting a
+	/// package path; do not trust <c>Model.Load</c>, which returns non-null even for a broken
+	/// model.</para>
 	/// </summary>
-	private string BodyModel
-	{
-		get
-		{
-			if ( !string.IsNullOrWhiteSpace( ModelPath ) )
-				return ModelPath;
-
-			return FactionPath.ToLowerInvariant().Contains( "civil_protection" )
-				? "models/poli/metrocop.vmdl"
-				: "models/citizen_human/citizen_human_male.vmdl";
-		}
-	}
+	private string BodyModel =>
+		!string.IsNullOrWhiteSpace( ModelPath )
+			? ModelPath
+			: "models/citizen_human/citizen_human_male.vmdl";
 
 	/// <summary>Hides or shows the model. When he is down, the body on the ground is the one to be
 	/// seen; when he is dead there is nothing of him left to show.</summary>
