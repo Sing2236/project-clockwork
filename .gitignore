@@ -18,10 +18,9 @@ obj/
 Code/*.csproj
 Editor/*.csproj
 
-# Engine working state
-.sbox/cloud/
-.sbox/transient/
-.sbox/cloud.db
+# Engine working state. .sbox/project.json is viewport camera and open-scene bookkeeping that
+# changes every time you look around - it is not part of the project.
+.sbox/
 
 # Junctioned library checkouts - these are links to other repos, never content.
 # BSPImport comes from DoctorGurke/sbox-bsp-import (MIT); hexagon from noahsabaj/hexagon.

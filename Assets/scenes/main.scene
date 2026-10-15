@@ -66062,7 +66062,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "3f69e9f2-6185-47cf-98f6-8b6b9d548faa",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -66145,7 +66145,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "1cc47f60-8399-4dd4-b41d-dc14c97e35da",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -66274,7 +66274,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "646918d1-14b9-411b-9238-308e84b841a4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -66489,7 +66489,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a49df91c-78f4-4d3a-8069-26d2f19a7f44",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -67165,7 +67165,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "e3410d96-2fd4-48e9-b6c7-c83b9a6f38b0",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -67208,7 +67208,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "9be0cfa3-e674-44c5-b9e1-2c2374fb769f",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -68690,7 +68690,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "5c509d49-c7d4-4d13-9319-17a69c14f396",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -68982,7 +68982,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "77fd6a17-769e-4210-829f-9dbd7feb5b3e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -69022,7 +69022,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "add96e6d-edc7-484a-b204-bf988061dae1",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -69680,7 +69680,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "578cbf1e-ae0e-4ae2-b1e9-233fd5bc561a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -69720,7 +69720,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "b3f05eab-2b9c-4a9c-b8fb-f172eef9d54a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -69963,7 +69963,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "08ccf50b-ed21-4fb7-9d2d-29c07cca75f2",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -70006,7 +70006,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "b4260fd6-3c81-41b1-9473-3ef53b34b8d7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -70092,7 +70092,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "290ce649-2398-4133-834d-18dc3430e539",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -70135,7 +70135,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "ce7172dc-02b6-44bf-a17a-ff6ffe971052",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -70178,7 +70178,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "d40a75c8-5141-4b96-855b-aa796bf356d6",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -70762,7 +70762,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "220ce948-a1d2-47da-ad50-ea098b4690b0",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -70928,7 +70928,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "cf09e016-5b50-46a7-b368-54f18e7467c1",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -71254,7 +71254,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0c085513-8224-482b-a157-f3ae10417eef",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -71294,7 +71294,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "b2818573-50a0-49f5-847d-45d798c923f9",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -71574,7 +71574,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ed295fb1-69c9-40a5-ae06-aefe52824d0e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -71654,7 +71654,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "585c6d1b-87b0-4eb5-8d17-dd714c22720a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -71774,7 +71774,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "fc1ab2c9-18cb-499c-bf5c-ebedc28813e3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -71977,7 +71977,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "fcff74be-b531-4105-99d2-3ae06d356c2c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72097,7 +72097,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "9b754d44-4edb-41ec-805e-ea177c51ef2d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72217,7 +72217,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "752c7e7e-457f-407c-b2cd-67720e665ef7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72586,7 +72586,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "cbf559e6-7ac3-4662-b0cd-7badadb461c3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72626,7 +72626,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "cb1908d8-182c-473c-b002-b0b3534ce360",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72749,7 +72749,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "4041eff2-9253-4dc1-8e64-246470a249d2",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72789,7 +72789,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "cbf8efba-2c5c-492e-a69c-96ae9dc5772a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72829,7 +72829,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "3bf0e259-5691-4e7f-a769-6f3c39e8604f",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -72992,7 +72992,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "4e8f158f-bb69-4ef6-bcc5-1231c6e02703",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -73032,7 +73032,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2716bc06-9964-439f-87f2-3bf9ee536745",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -73072,7 +73072,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "1b92d85d-3f95-453f-8c96-eda4b8b0370b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -73112,7 +73112,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "70dbdcac-d5c6-4c27-a97d-d7e302e6883a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -73232,7 +73232,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "f563b2f2-504c-4a62-84c0-ec6f6b0d4e26",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -73435,7 +73435,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "01aedb36-0a6d-4ae3-8254-5960cb5a12c6",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -73764,7 +73764,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7ebb9742-c99d-4e1f-9f21-7ae0a0b9354b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -74013,7 +74013,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "53cd0b5d-f72a-41bd-99f6-c81254b5e00c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -74803,7 +74803,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7b35624e-399e-451d-a604-1ffe638f6c88",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -75009,7 +75009,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "fbe65dd9-0047-444b-b8d7-6d994b907d66",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -75049,7 +75049,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "1b07e48e-3a31-45fd-80bc-c4c8719dde55",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -75089,7 +75089,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "23543b9a-9377-4a30-996b-b45234e6ba4b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -75249,7 +75249,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "794ce6ad-347e-4bf5-baa3-932db539ce17",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -75449,7 +75449,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7fe006eb-82fd-4d1b-baaa-afe93c2da5be",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -75572,7 +75572,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "3288e915-f345-47ea-b082-ad5a54d06bd8",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -76021,7 +76021,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "934e92a4-e3c3-4871-85f4-9176ada2f513",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -76064,7 +76064,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "27919d13-8266-49b4-bd50-824bcb4c0d8e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -76187,7 +76187,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "b3f98806-ac56-49f2-86a7-3820e27c6bc2",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -76227,7 +76227,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "e04c1dfb-d93c-4f3f-ba7a-de3f05a38a71",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -76393,7 +76393,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a6d7081d-6007-411f-be03-94e39251556e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -76476,7 +76476,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "91e2a6aa-e8a4-4381-b37f-fcb95a19e6dd",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -76559,7 +76559,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "50e864bc-5914-48b7-8367-55d063222325",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -76599,7 +76599,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "f11ec123-f2dd-475e-a753-fbd5f7f320b2",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -76842,7 +76842,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "4aa8d3fc-29cc-4d2a-a591-aab9c50c710c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -77082,7 +77082,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "17757203-d98f-47b8-a2ca-4b1ea05de09c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -77774,7 +77774,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "493745d3-1b44-478a-8837-1a05006b3635",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -77814,7 +77814,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "f3f9e682-5aaa-45c4-a855-a0df803515e7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -78100,7 +78100,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "dfdd9b4a-36a1-45d7-a333-03e5032c31c2",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -78343,7 +78343,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a6a18c98-35e5-421e-b7f4-8ea930ff3612",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -78715,7 +78715,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "dfb10427-614d-4bb9-9ca5-c146e53a83e1",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -78758,7 +78758,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "9c84b70f-9e1d-4a1c-80ad-2c7026fad9e6",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -78964,7 +78964,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "fdb7dafd-eb70-4506-8873-c922548dc362",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -79367,7 +79367,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "c971dfa6-ba31-46c6-8cdb-b31d323e8eaa",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -79487,7 +79487,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a61304fd-2bd2-450e-b072-2bf4c4fb8cf8",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -79939,7 +79939,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7356fa57-0cf0-4b48-a598-51987b1a439d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -81049,7 +81049,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0eeb9ee7-c6fd-4224-bd5d-43f2cc9880a3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -81372,7 +81372,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "83752de7-07b4-4a2e-97ec-0a2c95ecb3a9",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82166,7 +82166,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "057fd055-3ea3-4851-aaf7-bf24e54a4c72",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82206,7 +82206,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "8a6da3ea-8fca-4826-bfc4-3530fc46e5e3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82246,7 +82246,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "1d3bd2a8-87f2-4c7f-8a09-723a8cd89bd0",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82366,7 +82366,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2a95154a-4dd7-4893-9f22-499b98408d1d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82406,7 +82406,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "67dd26dc-ba44-4517-ba0d-cc470e41acf6",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82446,7 +82446,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "eea17925-b822-403a-b9d1-24f78d36629a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82486,7 +82486,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "68ae2e9a-be45-4225-addf-eb5321afb229",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82526,7 +82526,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "e37e5f2f-0115-48d7-8818-3b6c19473021",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82646,7 +82646,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "d7676954-0597-4710-b9ad-a397c8935a60",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82686,7 +82686,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "937f85bd-2657-4bee-be67-d43326cca467",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82726,7 +82726,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "6ed3aaca-fa20-4ed1-aee1-b7d360cef546",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -82966,7 +82966,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "5b59747c-9f55-4ed7-855b-30f7767eca6b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -83006,7 +83006,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "31c933f3-7676-4ddf-90dd-dd8985ec9b42",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -83209,7 +83209,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "7f45883a-03b8-4949-8f3e-a61429b4cae7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -84033,7 +84033,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "5cb2c157-d096-4764-bfa1-0a7dde98fdd7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -84273,7 +84273,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "65aa3757-5137-4ccd-87b9-a50657d25e6f",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -84559,7 +84559,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "699538c8-8c9a-4fd7-b594-b68224023ee3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -84759,7 +84759,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "9bca0361-1c97-41cd-b790-e80aca633378",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -84959,7 +84959,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "fbd92cad-111d-43d4-847c-8c7f0a02a320",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -85002,7 +85002,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0f7ab742-c8f8-4872-9e8d-d01a1d05880d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -85042,7 +85042,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7afc44cd-888d-4f25-8292-a71c0b785063",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -85122,7 +85122,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "99236689-5b35-4ee8-8b30-868075e0f357",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -85242,7 +85242,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "51c6721b-c1bf-4abf-91c6-84dbb8197fe5",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -86442,7 +86442,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "261d7a2f-954f-4a22-8280-29f4586b10bb",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -87605,7 +87605,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "670e5846-9f6b-4e74-8032-a3b399d32b17",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -87845,7 +87845,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "9ad54e44-ab81-4fea-a9f9-12c65abcbf76",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -88045,7 +88045,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "13939923-9f9b-4ff0-ae49-9d9996e0aa7f",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -88211,7 +88211,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "f05d92b0-eac8-4f7b-b36d-b7d9bf145ec9",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -88377,7 +88377,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "fe7e8ef3-4d0b-4cef-9fe7-1aa1f1614338",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -88457,7 +88457,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "255c092f-24e9-4bf1-8fac-09f29b129ace",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89238,7 +89238,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0416a498-43e4-4cb6-b1c5-906b3fdeba7b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89278,7 +89278,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "cafa5d57-06ab-4bc1-8ca6-399ea0817274",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89318,7 +89318,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "363c8b1d-742e-48b9-bc5e-e2bd4a5d3c2c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89398,7 +89398,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a90cb35d-0f63-4ba4-9e0f-d4dd138cd986",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89438,7 +89438,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "02550c77-6cd0-4565-bd53-6bf1bb1808d7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89518,7 +89518,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "4d724823-ad13-4226-93e9-e11c217ffc0c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89678,7 +89678,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "dd350fc7-5b0b-4c25-a821-e5a8e3c50a25",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89921,7 +89921,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "c7ce5a31-3bf7-4708-846a-70a80b611741",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -89961,7 +89961,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "2eee83bc-6917-4191-a1dc-20863997670d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -91216,7 +91216,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "ebb60974-700e-4a14-b217-d2c3e85783df",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -91299,7 +91299,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "ef3d3348-5065-45b4-a716-85b4ecb8305b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -92145,7 +92145,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "093ca98f-608a-43e9-8d7c-fd77a4c6f38e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -92634,7 +92634,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "ea21aeae-50f2-473f-bfb0-7813da41554d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -92677,7 +92677,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a2dcdded-7400-4197-88f9-c0511baedb78",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -93037,7 +93037,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "c4304630-14a2-44cb-a37d-ed59c4424fc0",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -93403,7 +93403,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "ca09b808-6d05-4740-b73c-05655eaacbb3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -93652,7 +93652,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "c1cf3c6c-abc1-4464-a768-ca0af30da401",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -94018,7 +94018,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "9453c52f-986d-46f0-9576-28fb935f1b35",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -94218,7 +94218,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "f3d3e3ce-890c-4891-af0f-9ec1b86ab2bf",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -94378,7 +94378,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "c85939fb-141a-4177-af13-d2ad38517ff5",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -94667,7 +94667,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "afb4b91a-05fa-442e-a550-b9f6e5b07911",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -94750,7 +94750,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "b77cb468-bbfc-4284-b4fd-f3eeb4bd9b96",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -94913,7 +94913,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "e06898e7-d448-4716-ac46-d47cff1cae6b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -95313,7 +95313,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "978cf6ec-9141-4a3d-8745-102b4332b6dd",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -95433,7 +95433,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0a79c33f-4373-4f5d-84b2-ec052dfbaef2",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -95553,7 +95553,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "6a2de67d-cf7a-48f8-a87f-eea977de81c4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -95793,7 +95793,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "80c35be8-b806-4769-a956-703af16f2878",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -96113,7 +96113,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ae29fe5d-5598-4155-a758-b25e306225fa",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -96356,7 +96356,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ee3bd435-48b3-4e5f-9c1e-233222d8c8cd",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -96676,7 +96676,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "74e2445a-840c-4394-8c22-2a7587f379a4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -96756,7 +96756,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "614e71ec-0466-4617-bb3f-6173b0059d41",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -96916,7 +96916,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ed1043bd-4d85-40d8-a95c-d34f56da2636",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -97685,7 +97685,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "7e58fe5e-c183-41da-bc97-d353343a6fe7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -98100,7 +98100,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "f983c6a4-f77f-4288-9c70-20455d6d5e0b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -98260,7 +98260,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "356e9276-39c3-4df6-a6e0-0bb226fa01b9",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -98475,7 +98475,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2da8f90d-84c5-4d18-84e9-94a78da09acb",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -99844,7 +99844,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "18d678fd-4814-4029-a11d-c944bfe98358",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -99884,7 +99884,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "e0a87aac-3029-428d-ba22-dc87ea76746e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -100007,7 +100007,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0512a5e2-22b7-4195-b16b-de872254470d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -100047,7 +100047,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "5079ccd5-34cd-464f-ac63-8d1c342d542d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -100087,7 +100087,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "e7f0c355-ce03-4820-a753-e11909028ca4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -100499,7 +100499,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "203686b2-48f2-4445-9591-55ebc0afe980",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -100542,7 +100542,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "62e85f0f-0d53-47e4-9a21-f70a1c9c82ef",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -100668,7 +100668,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2c925480-3b5e-4893-a78f-241861186b1b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -100708,7 +100708,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ea5fddc1-b71b-42fc-93de-707169f98873",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -100828,7 +100828,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "68af1a6a-e515-402f-9cc4-165f67849693",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -101120,7 +101120,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "f5e68651-1510-48c9-9212-151fd11365cd",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -101200,7 +101200,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "ee33eb2c-216e-43ba-89e3-806481c5df2c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -101243,7 +101243,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "7650736a-ccdb-45d5-88ed-e0a006f7e93e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -101286,7 +101286,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "1ceeecfc-b12f-4d6b-9533-fe79411af99a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -101772,7 +101772,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "d14151f1-f8f4-466e-a34e-6a434ecf7c5f",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -101852,7 +101852,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "8cb9c230-595e-48fc-bdf8-e9dd6a8ccbd5",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -101892,7 +101892,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "272a425f-b115-4041-890c-423ab43bffc5",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -102015,7 +102015,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ba19dff8-02f9-47eb-ba7f-7041ce6a483c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -102138,7 +102138,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "8ad61129-bc4b-4d08-8867-d0d7b14615a3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -102264,7 +102264,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "a0563359-ef29-4541-bac2-5d236397f4e4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -102547,7 +102547,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "b2fef525-799b-434f-9a50-46e5693f44f1",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -102667,7 +102667,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "8748897e-c7f7-4ec0-93b4-623dbd35faae",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -102787,7 +102787,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "bab9fa0e-729d-4bab-9c4b-d002a67e672d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -102827,7 +102827,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "6d398b6e-077c-4655-8da3-f6b08bc9c7a5",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -103110,7 +103110,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "02ca5caf-919c-4835-a506-e22b3d9922d0",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -103270,7 +103270,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "16996e24-578e-4718-a78d-bb1ae8e7198c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -103393,7 +103393,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "8133e6ff-9026-4039-81ad-399f0339383e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -103599,7 +103599,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a732e22a-da29-42ea-8908-9b35ec6320cb",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -104054,7 +104054,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "54708951-4068-4f52-bd6e-e29db4bb6c50",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -104552,7 +104552,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "1ae8cd2f-e0e9-452a-a9ba-531cfbf96fc8",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -104635,7 +104635,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a28fdd9e-57e9-42c6-af73-e2780db2b023",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -104998,7 +104998,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ece2f97d-c8d9-43a3-bd5f-25efedb4cd8c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -105724,7 +105724,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2dd4fe09-2c39-4cc8-a143-70a6299543f7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -105964,7 +105964,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "b1e565ca-9778-4715-9544-2c5aa144b59e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -106422,7 +106422,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "d6ad4b46-c5cc-417f-bd16-14f7c4904567",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -106542,7 +106542,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "3cbc1b5d-1845-4b16-8306-4c38cccd7610",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -106862,7 +106862,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "bdfc85d9-620d-427d-95b5-65783e52c2d3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -107806,7 +107806,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "5619d64f-ce83-469b-acb8-f7e488aa9af1",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -108089,7 +108089,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7d879501-cae3-4830-a810-6611b6950bb0",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -108129,7 +108129,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "fbdb9983-de0d-41eb-b97b-ad54f5d1c9a4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -108375,7 +108375,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "09da975c-6a53-4ded-aa45-fdea13835996",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -108621,7 +108621,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "6f67e0fc-30c1-4d76-aa19-9197d4c3f2ee",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -108750,7 +108750,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "afb7f0a2-3bb0-4ef5-935e-92f3d0a63b38",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -109070,7 +109070,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "ce15336e-2e83-4ddd-9d82-7fd2cbb2d999",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -109190,7 +109190,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "27e7eed2-624f-4b91-b032-370f88eaf238",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -109519,7 +109519,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0d71a92a-bff0-4c28-b0de-afe75968d9a3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -109639,7 +109639,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "e28ee2da-d3e9-4a1b-bf05-f7d1904b4e14",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -109679,7 +109679,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "4d076788-b0d3-4647-a53a-6ac9229c78e7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -109959,7 +109959,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "6a63ce59-902e-43ce-a308-01ea4af45795",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -110079,7 +110079,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "a66553e7-a685-4a67-ae96-98bc7379806e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -110728,7 +110728,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "cbf9e7e3-78a8-4cc3-97ac-f10ee2010602",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -110934,7 +110934,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "25b1ab54-d74c-407a-992c-259cd0a02ddc",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -110977,7 +110977,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "2629db61-361e-4df7-9f9b-b5404fe39c47",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -112106,7 +112106,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "4fc67c76-efed-43ab-bbe7-b4b659f4049a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -112807,7 +112807,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "67548ed0-17cd-4b5c-8254-edf69fa366ba",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -112967,7 +112967,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "efa0e464-be7f-465d-91e6-9ec9d82d34c2",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -113087,7 +113087,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "3f403f3a-bce6-4c66-b940-1c96d976047d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -113330,7 +113330,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "8ab0d516-e50b-46f7-a894-de16c5a9368b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -113902,7 +113902,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "da94fc9d-fb6b-4c52-ad82-2d4f61aa6145",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -114068,7 +114068,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "452c8d02-6830-400e-bd02-38d0cfe80253",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -114899,7 +114899,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "990769e4-135c-4424-b338-0e50f28eba89",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -115185,7 +115185,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7d92b8a5-272d-4b2d-bd07-4144237e9e8d",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -115391,7 +115391,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2da97197-3b11-4e73-9f1c-bd9377fbaf84",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -115594,7 +115594,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "cb1d8d4c-ca8f-4975-adc1-0e5ea1a96c4a",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -115680,7 +115680,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "9c7b3133-a8ce-4e56-912e-28f4ef6a3045",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -116399,7 +116399,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "985dd113-dce7-40ca-b81e-6b23c73ad840",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -116482,7 +116482,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "7da91d5c-2752-4de7-bd03-d1428bec3baf",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -116562,7 +116562,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "eb617a5f-f790-494e-98a1-50c124ff6722",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -116602,7 +116602,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "5b5ef042-8672-4631-afec-a03ca6f280b4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -116642,7 +116642,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "0e3333f0-86d8-4260-9872-7090b63f443e",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -116762,7 +116762,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2ea83732-b088-44b7-9708-6b7de5ea61ee",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -116842,7 +116842,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "e39be299-959e-4495-b88e-2dc09fb0a85b",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -117042,7 +117042,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "c4ceb893-a285-46f5-bccf-78653bbe63b7",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -117377,7 +117377,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "829b21ad-4490-41aa-966f-f50d33b555b4",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -117420,7 +117420,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "80754815-3acb-4a2b-8619-705499940cce",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -117580,7 +117580,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "1e427a76-7a57-4e06-82d2-0013856dbcb6",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -118183,7 +118183,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "a65b03a5-e241-43a2-916f-69abbf172be3",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119201,7 +119201,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "6c78edb0-5081-4285-bc96-fdd72bf6f359",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119281,7 +119281,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "571de979-1756-4f35-bce8-ff8674cfef71",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119361,7 +119361,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "fd413ef6-e501-4d5b-bf44-d08aa7311428",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119401,7 +119401,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "6457fb19-472f-449b-b9e9-c89c45aafb5c",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119481,7 +119481,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "2bbf692b-ebae-4f68-9876-b9c9c33d2f49",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119521,7 +119521,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "97184619-f4c8-490f-bbc2-238509e7f245",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119561,7 +119561,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "6cfcb938-d0eb-47ce-aaee-05e2c9666458",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -119884,7 +119884,7 @@
                         {
                           "__type": "Sandbox.SpotLight",
                           "__guid": "24b2be6e-b54d-48d9-97b7-4cb7bd22e227",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "ConeInner": 15,
@@ -120339,7 +120339,7 @@
                         {
                           "__type": "Sandbox.PointLight",
                           "__guid": "1b3ba714-519b-4b03-931a-4ea9e9b1aae8",
-                          "__enabled": false,
+                          "__enabled": true,
                           "Flags": 0,
                           "Attenuation": 1,
                           "Contribution": "Diffuse, Specular, Transmissive",
@@ -120487,6 +120487,68 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "b81cb7e9-0c93-4ee5-9469-210455948d6d",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "CP Unit",
+      "Position": "-700,1501.4,-328",
+      "Rotation": "-0,0,1,-4.37113883E-08",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Hl2rp.CitizenNpc",
+          "__guid": "1b0e093e-dadf-4fc7-acd7-4c6847e623fb",
+          "__enabled": true,
+          "Flags": 0,
+          "AwareRange": 600,
+          "CitizenDescription": "a Civil Protection officer in white armour, visor down",
+          "CitizenName": "Vance",
+          "EngageSeconds": 15,
+          "FactionPath": "factions/civil_protection.faction",
+          "HearRange": 700,
+          "Model": "llama3.2:latest",
+          "OllamaUrl": "http://localhost:8080/api/generate",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Personality": "He is a Civil Protection unit on patrol, clipped and procedural over the radio, quick to cite a violation and slow to believe any excuse.",
+          "ReflectEvery": 5,
+          "SpeakCooldown": 8,
+          "ModelPath": ""
+        },
+        {
+          "__type": "Hl2rp.CitizenWander",
+          "__guid": "b6a02b8b-2b5b-4319-9e62-12770bbb37a8",
+          "__enabled": true,
+          "Flags": 0,
+          "ArriveDistance": 32,
+          "LegTimeout": 20,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Pace": 50,
+          "PauseMax": 12,
+          "PauseMin": 3,
+          "Radius": 300,
+          "StuckSeconds": 1.5
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {

@@ -176,6 +176,31 @@ public sealed class CitizenNpc : Component
 	/// belongs among the citizens unless somebody says otherwise.</summary>
 	[Property] public string FactionPath { get; set; } = "factions/citizens.faction";
 
+	/// <summary>Overrides the body he is built with. Left empty, the faction chooses it — see
+	/// <see cref="BodyModel"/>.</summary>
+	[Property] public string ModelPath { get; set; } = "";
+
+	/// <summary>
+	/// The body this citizen is built with.
+	///
+	/// <para>Both human and Civil Protection are real models that exist here rather than being
+	/// imported: the citizen is the schema's own <c>citizen_human</c>, and a CP unit is
+	/// <c>models/poli/metrocop.vmdl</c> from the workshop's <c>knoxshelter.metrocop</c> package. So
+	/// the faction is what decides the look, and nothing has to be converted from Source 1.</para>
+	/// </summary>
+	private string BodyModel
+	{
+		get
+		{
+			if ( !string.IsNullOrWhiteSpace( ModelPath ) )
+				return ModelPath;
+
+			return FactionPath.ToLowerInvariant().Contains( "civil_protection" )
+				? "models/poli/metrocop.vmdl"
+				: "models/citizen_human/citizen_human_male.vmdl";
+		}
+	}
+
 	/// <summary>Hides or shows the model. When he is down, the body on the ground is the one to be
 	/// seen; when he is dead there is nothing of him left to show.</summary>
 	public void HideBody( bool hidden )
@@ -225,7 +250,7 @@ public sealed class CitizenNpc : Component
 
 		var body = new GameObject( GameObject, true, "Body" );
 		_renderer = body.AddComponent<SkinnedModelRenderer>();
-		_renderer.Model = Sandbox.Model.Load( "models/citizen_human/citizen_human_male.vmdl" );
+		_renderer.Model = Sandbox.Model.Load( BodyModel );
 		_renderer.CreateBoneObjects = true;
 
 		// Linked explicitly, as Hexagon does: the automatic link runs before the child exists.
