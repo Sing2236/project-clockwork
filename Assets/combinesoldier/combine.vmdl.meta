@@ -1,0 +1,26 @@
+{
+  "guid": "7d3625e8-eee6-429d-85e7-62a0330def18",
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Combine",
+      "Type": "model",
+      "Org": "local",
+      "Ident": "combine",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": [],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "AI": {
+        "EnableMcpCommunication": true
+      },
+      "Metadata": {
+        "SingleAssetSource": "combinesoldier/combine.vmdl",
+        "ParentPackage": "kbj.hl2rp"
+      }
+    }
+  }
+}

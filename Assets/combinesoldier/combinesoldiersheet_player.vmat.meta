@@ -1,0 +1,28 @@
+{
+  "guid": "a4a22b76-5cd4-486b-9943-030bfbd79242",
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Combinesoldiersheet Player",
+      "Type": "material",
+      "Org": "local",
+      "Ident": "combinesoldiersheet_player",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": [
+        "playermodelports.combine#115229"
+      ],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "AI": {
+        "EnableMcpCommunication": true
+      },
+      "Metadata": {
+        "SingleAssetSource": "combinesoldier/combinesoldiersheet_player.vmat",
+        "ParentPackage": "kbj.hl2rp"
+      }
+    }
+  }
+}

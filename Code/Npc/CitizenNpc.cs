@@ -183,24 +183,32 @@ public sealed class CitizenNpc : Component
 	/// <summary>
 	/// The body this citizen is built with.
 	///
-	/// <para>Everyone wears the schema's own <c>citizen_human</c>, because that is the only human
-	/// body that reliably exists here. A Civil Protection unit therefore looks like a civilian for
-	/// now; <see cref="ModelPath"/> is the hook for giving him a proper one later.</para>
+	/// <para>A civilian wears the schema's own <c>citizen_human</c>; a Civil Protection unit wears the
+	/// Combine Soldier from the workshop's <c>playermodelports.combine</c> package. Neither is
+	/// converted from Source 1 - both are real s&box models - so the faction alone decides the
+	/// look.</para>
 	///
-	/// <para>Why it is not already a Combine model, so nobody repeats the search. There is no
-	/// metrocop anywhere in s&box. The workshop <i>does</i> list Combine models -
-	/// <c>playermodelports.combine</c>, <c>hl2npcs.combine_soldier</c>, <c>knoxshelter.metrocop</c> -
-	/// and they install and mount, but their <b>models never register as assets</b>: only their
-	/// textures stream. <c>asset_info</c> on those paths returns <c>No asset</c>, and a model that
-	/// cannot resolve loads as the "error" model rather than failing loudly, which is how a CP unit
-	/// ends up standing there as the word "error". Verify with <c>asset_info</c> before trusting a
-	/// package path; do not trust <c>Model.Load</c>, which returns non-null even for a broken
-	/// model.</para>
+	/// <para>Two things cost a lot of time here, so they are worth writing down. There is <b>no
+	/// metrocop model anywhere in s&box</b>; the Combine Soldier is the closest that exists, and it
+	/// stands in for Civil Protection. And a package asset is <b>not available the moment it
+	/// installs</b> - <c>combinesoldier/combine.vmdl</c> returns <c>No asset</c> for a minute or so
+	/// afterwards, then compiles and appears. Judge it with <c>asset_info</c>, never with
+	/// <c>Model.Load</c>: that returns non-null even for a model that cannot resolve, and s&box
+	/// draws those as the literal word "error" instead of failing, which is exactly how a CP unit
+	/// ended up standing in the city as "error".</para>
 	/// </summary>
-	private string BodyModel =>
-		!string.IsNullOrWhiteSpace( ModelPath )
-			? ModelPath
-			: "models/citizen_human/citizen_human_male.vmdl";
+	private string BodyModel
+	{
+		get
+		{
+			if ( !string.IsNullOrWhiteSpace( ModelPath ) )
+				return ModelPath;
+
+			return FactionPath.ToLowerInvariant().Contains( "civil_protection" )
+				? "combinesoldier/combine.vmdl"
+				: "models/citizen_human/citizen_human_male.vmdl";
+		}
+	}
 
 	/// <summary>Hides or shows the model. When he is down, the body on the ground is the one to be
 	/// seen; when he is dead there is nothing of him left to show.</summary>
