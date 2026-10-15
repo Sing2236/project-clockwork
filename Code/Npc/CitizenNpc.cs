@@ -262,6 +262,14 @@ public sealed class CitizenNpc : Component
 		_renderer.Model = Sandbox.Model.Load( BodyModel );
 		_renderer.CreateBoneObjects = true;
 
+		// What puts him in a pose at all. A model's animation graph does nothing on its own: with
+		// nothing feeding it parameters the skeleton holds its bind pose, and a humanoid bind pose
+		// is a T-pose. The helper reads the controller on the parent and sets move_x, move_y,
+		// b_grounded and the rest every frame, which is what makes him walk rather than glide.
+		// The body model must also name an anim graph - see BodyModel.
+		var animation = body.AddComponent<Sandbox.Citizen.CitizenAnimationHelper>();
+		animation.Target = _renderer;
+
 		// Linked explicitly, as Hexagon does: the automatic link runs before the child exists.
 		controller.Renderer = _renderer;
 		_bodyObject = body;
