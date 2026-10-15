@@ -266,9 +266,26 @@ public sealed class CitizenNpc : Component
 		// nothing feeding it parameters the skeleton holds its bind pose, and a humanoid bind pose
 		// is a T-pose. The helper reads the controller on the parent and sets move_x, move_y,
 		// b_grounded and the rest every frame, which is what makes him walk rather than glide.
-		// The body model must also name an anim graph - see BodyModel.
 		var animation = body.AddComponent<Sandbox.Citizen.CitizenAnimationHelper>();
 		animation.Target = _renderer;
+
+		// Hand the graph over directly when the model did not bring one of its own.
+		//
+		// The schema's citizen names its graph in the .vmdl and arrives with it already attached, so
+		// this is a no-op for him. A ported model does not: combine.vmdl names the very same graph
+		// and s&box silently drops it - the compiled file contains the reference, yet
+		// Model.AnimGraph comes back null, so the skeleton never moves. Assigning it here is what
+		// actually binds it, and it is the standard way to retarget a port onto a skeleton it shares
+		// bones with but was not authored against.
+		if ( _renderer.Model?.AnimGraph is null )
+		{
+			var graph = ResourceLibrary.Get<AnimationGraph>( "models/citizen_human/animgraphs/human.vanmgrph" );
+			if ( graph is not null )
+			{
+				_renderer.AnimationGraph = graph;
+				_renderer.UseAnimGraph = true;
+			}
+		}
 
 		// Linked explicitly, as Hexagon does: the automatic link runs before the child exists.
 		controller.Renderer = _renderer;
