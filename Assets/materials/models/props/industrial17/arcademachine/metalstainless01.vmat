@@ -1,0 +1,14 @@
+// built from models/props/industrial17/arcademachine/metalstainless01.vmt
+Layer0
+{
+	shader "shaders/complex.shader"
+	F_SPECULAR 1
+	TextureColor "materials/props/metalstainless01.png"
+	g_flMetalness "0.0"
+	g_flRoughnessScaleFactor "1.000"
+	g_bFogEnabled "1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

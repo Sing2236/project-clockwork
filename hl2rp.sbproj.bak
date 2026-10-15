@@ -1,0 +1,40 @@
+{
+  "Title": "hl2rp",
+  "Type": "game",
+  "Org": "kbj",
+  "Ident": "hl2rp",
+  "Schema": 1,
+  "IncludeSourceFiles": false,
+  "Resources": null,
+  "PackageReferences": [
+    "kbj.hexagon"
+  ],
+  "EditorReferences": null,
+  "Mounts": null,
+  "IsStandaloneOnly": false,
+  "AI": {
+    "EnableMcpCommunication": true
+  },
+  "Metadata": {
+    "MaxPlayers": 64,
+    "MinPlayers": 1,
+    "TickRate": 50,
+    "GameNetworkType": "Multiplayer",
+    "MapSelect": "Unrestricted",
+    "MapList": [
+      "facepunch.flatgrass"
+    ],
+    "RankType": "None",
+    "PerMapRanking": false,
+    "LeaderboardType": "None",
+    "CsProjName": "",
+    "Compiler": {
+      "Whitelist": true,
+      "Unsafe": false,
+      "Nullables": true,
+      "WarningsAsErrors": ""
+    },
+    "StartupScene": "scenes/main.scene",
+    "DedicatedServerStartupScene": "scenes/main.scene"
+  }
+}

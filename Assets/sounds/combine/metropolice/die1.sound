@@ -1,0 +1,13 @@
+{
+  "UI": false,
+  "Volume": "1",
+  "Pitch": "1",
+  "Decibels": 70,
+  "SelectionMode": "Random",
+  "Sounds": [ "sounds/combine/metropolice/die1.vsnd" ],
+  "OcclusionEnabled": true,
+  "DistanceAttenuation": true,
+  "Distance": 1200,
+  "__references": [],
+  "__version": 1
+}

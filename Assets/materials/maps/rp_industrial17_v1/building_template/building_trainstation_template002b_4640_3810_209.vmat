@@ -1,0 +1,14 @@
+// built from maps/rp_industrial17_v1/building_template/building_trainstation_template002b_4640_3810_209.vmt
+Layer0
+{
+	shader "shaders/complex.shader"
+	F_SPECULAR 1
+	TextureColor "materials/building_template/building_trainstation_template002b.png"
+	g_flMetalness "0.0"
+	g_flRoughnessScaleFactor "1.000"
+	g_bFogEnabled "1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

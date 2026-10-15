@@ -1,0 +1,20 @@
+{
+  "UI": false,
+  "Volume": "1.0",
+  "Pitch": "1",
+  "Decibels": 75,
+  "SelectionMode": "Forward",
+  "Sounds": [
+    "sounds/combine/metropolice/gear1.vsnd",
+    "sounds/combine/metropolice/gear2.vsnd",
+    "sounds/combine/metropolice/gear3.vsnd",
+    "sounds/combine/metropolice/gear4.vsnd",
+    "sounds/combine/metropolice/gear5.vsnd",
+    "sounds/combine/metropolice/gear6.vsnd"
+  ],
+  "OcclusionEnabled": true,
+  "DistanceAttenuation": true,
+  "Distance": 2500,
+  "__references": [],
+  "__version": 1
+}

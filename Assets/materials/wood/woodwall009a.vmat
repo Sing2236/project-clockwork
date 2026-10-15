@@ -1,0 +1,15 @@
+// sourced from Half-Life 2 for materials/wood/woodwall009a.vmat
+Layer0
+{
+	shader "shaders/complex.shader"
+	F_SPECULAR 1
+	TextureColor "materials/wood/woodwall009a.png"
+	TextureNormal "materials/wood/woodwall009a_normal.png"
+	g_flMetalness "0.0"
+	g_flRoughnessScaleFactor "1.000"
+	g_bFogEnabled "1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

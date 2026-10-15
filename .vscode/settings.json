@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "*.shader": "slang",
+    "*.hlsl": "slang"
+  },
+  "slang.additionalSearchPaths": [
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\core\\shaders",
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\menu\\Assets\\shaders",
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\tools\\Assets\\shaders",
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\editor\\ShaderGraph\\Assets\\shaders",
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\editor\\ActionGraph\\Assets\\shaders",
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\editor\\MovieMaker\\Assets\\shaders",
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\editor\\Hammer\\Assets\\shaders",
+    "D:\\SteamLibrary\\steamapps\\common\\sbox\\editor\\DooEditor\\Assets\\shaders",
+    "C:\\Users\\ethan\\Documents\\SboxProjects\\HL2RP\\Assets\\shaders",
+    "C:\\Users\\ethan\\Documents\\SboxProjects\\HL2RP\\Libraries\\BSPImport\\Assets\\shaders",
+    "C:\\Users\\ethan\\Documents\\SboxProjects\\HL2RP\\Libraries\\hexagon\\Assets\\shaders"
+  ],
+  "slang.predefinedMacros": [],
+  "slang.workspaceFlavor": "vfx"
+}

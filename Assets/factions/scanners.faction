@@ -1,0 +1,8 @@
+{
+  "Title": "Scanners",
+  "Description": "Metropolice scanners, utilising Combine technology.",
+  "Tint": "0.35,0.55,0.65,1",
+  "Ranks": [ {"Title":"Scanner","Insignia":"","Enlists":false,"Promotes":false,"PromotesTo":"","Discharges":false} ],
+  "__references": [],
+  "__version": 0
+}

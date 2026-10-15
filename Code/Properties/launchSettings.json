@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Editor": {
+      "commandName": "Executable",
+      "executablePath": "D:/SteamLibrary/steamapps/common/sbox/sbox-dev.exe",
+      "commandLineArgs": "-project \u0022C:\\Users\\ethan\\Documents\\SboxProjects\\HL2RP\\hl2rp.sbproj\u0022"
+    }
+  }
+}

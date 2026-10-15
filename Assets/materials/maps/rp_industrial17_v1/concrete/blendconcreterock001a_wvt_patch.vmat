@@ -1,0 +1,15 @@
+// built from maps/rp_industrial17_v1/concrete/blendconcreterock001a_wvt_patch.vmt
+Layer0
+{
+	shader "shaders/complex.shader"
+	F_SPECULAR 1
+	TextureColor "materials/nature/dirtfloor004a.png"
+	TextureNormal "materials/concrete/concretefloor012a_normal.png"
+	g_flMetalness "0.0"
+	g_flRoughnessScaleFactor "1.000"
+	g_bFogEnabled "1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

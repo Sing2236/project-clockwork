@@ -1,0 +1,8 @@
+{
+  "Title": "Vortigaunts",
+  "Description": "An alien race from the planet Xen.",
+  "Tint": "0.4,0.7,0.4,1",
+  "Ranks": [ {"Title":"Vortigaunt","Insignia":"","Enlists":false,"Promotes":false,"PromotesTo":"","Discharges":false} ],
+  "__references": [],
+  "__version": 0
+}

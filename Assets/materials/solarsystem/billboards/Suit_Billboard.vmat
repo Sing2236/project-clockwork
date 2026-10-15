@@ -1,0 +1,14 @@
+// built from solarsystem/billboards/Suit_Billboard.vmt
+Layer0
+{
+	shader "shaders/complex.shader"
+	F_SPECULAR 1
+	TextureColor "materials/solarsystem/billboards/suit_billboard.png"
+	g_flMetalness "0.0"
+	g_flRoughnessScaleFactor "1.000"
+	g_bFogEnabled "1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

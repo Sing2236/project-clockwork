@@ -1,0 +1,14 @@
+// fallback texture for maps/rp_industrial17_v1/metal/citadel_tilefloor016a_2784_2920_2181.vmat
+Layer0
+{
+	shader "shaders/complex.shader"
+	F_SPECULAR 1
+	TextureColor "materials/maps/rp_industrial17_v1/metal/citadel_tilefloor016a_2784_2920_2181.png"
+	g_flMetalness "0.0"
+	g_flRoughnessScaleFactor "1.000"
+	g_bFogEnabled "1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

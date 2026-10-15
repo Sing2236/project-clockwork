@@ -1,0 +1,8 @@
+{
+  "Title": "Citizens",
+  "Description": "The city's population, and everyone else not in uniform.",
+  "Tint": "0.55,0.5,0.45,1",
+  "Ranks": [ {"Title":"Citizen","Insignia":"","Enlists":false,"Promotes":false,"PromotesTo":"","Discharges":false} ],
+  "__references": [],
+  "__version": 0
+}

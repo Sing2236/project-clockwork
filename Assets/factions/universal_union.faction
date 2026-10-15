@@ -1,0 +1,8 @@
+{
+  "Title": "Universal Union",
+  "Description": "The Union's transhuman soldiers, produced by the Combine.",
+  "Tint": "0.45,0.15,0.15,1",
+  "Ranks": [ {"Title":"Soldier","Insignia":"","Enlists":false,"Promotes":false,"PromotesTo":"","Discharges":false},{"Title":"Elite","Insignia":"","Enlists":false,"Promotes":false,"PromotesTo":"","Discharges":false},{"Title":"Commander","Insignia":"","Enlists":true,"Promotes":true,"PromotesTo":"Soldier","Discharges":true} ],
+  "__references": [],
+  "__version": 0
+}

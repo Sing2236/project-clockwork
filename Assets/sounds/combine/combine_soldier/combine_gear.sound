@@ -1,0 +1,20 @@
+{
+  "UI": false,
+  "Volume": "1",
+  "Pitch": "1",
+  "Decibels": 75,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/combine/combine_soldier/gear1.vsnd",
+    "sounds/combine/combine_soldier/gear2.vsnd",
+    "sounds/combine/combine_soldier/gear3.vsnd",
+    "sounds/combine/combine_soldier/gear4.vsnd",
+    "sounds/combine/combine_soldier/gear5.vsnd",
+    "sounds/combine/combine_soldier/gear6.vsnd"
+  ],
+  "OcclusionEnabled": true,
+  "DistanceAttenuation": true,
+  "Distance": 1200,
+  "__references": [],
+  "__version": 1
+}

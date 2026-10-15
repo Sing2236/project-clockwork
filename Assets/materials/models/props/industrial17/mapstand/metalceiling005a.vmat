@@ -1,0 +1,15 @@
+// built from models/props/industrial17/mapstand/metalceiling005a.vmt
+Layer0
+{
+	shader "shaders/complex.shader"
+	F_SPECULAR 1
+	TextureColor "materials/metal/metalceiling005a.png"
+	TextureNormal "materials/metal/metalceiling005a_normal.png"
+	g_flMetalness "0.0"
+	g_flRoughnessScaleFactor "1.000"
+	g_bFogEnabled "1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

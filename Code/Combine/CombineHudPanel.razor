@@ -1,0 +1,37 @@
+@using System
+@using System.Linq
+@using Sandbox
+@using Sandbox.UI
+@namespace Hl2rp
+@inherits PanelComponent
+
+@* The Combine suit's display: the lines it reads out to whoever is wearing it, typed across the top
+   left of the screen. What the lines are and when they appear is CombineHud's business — this only
+   draws them, and only ever draws the local wearer's own. *@
+<root>
+	<div class="suit">
+		@foreach ( var line in CombineHud.Lines )
+		{
+			<div class="suitline @(line.Tone.ToString().ToLowerInvariant())">@Revealed( line )</div>
+		}
+	</div>
+</root>
+
+@code
+{
+	/// <summary>
+	/// As much of a line as the suit has typed out so far. The prompt is up before the first word of
+	/// the message, so a line announcing itself is never blank.
+	/// </summary>
+	private static string Revealed( SuitLine line )
+	{
+		if ( CombineHud.SecondsPerCharacter <= 0f ) return line.Text;
+
+		var characters = CombineHud.Prefix.Length + (int)((float)line.Age / CombineHud.SecondsPerCharacter);
+		return characters >= line.Text.Length ? line.Text : line.Text[ ..characters ];
+	}
+
+	// The lines type themselves out and then expire, so the panel cannot only rebuild when the
+	// display changes — it has to rebuild as time passes too.
+	protected override int BuildHash() => HashCode.Combine( CombineHud.Version, (int)( RealTime.Now * 30f ) );
+}

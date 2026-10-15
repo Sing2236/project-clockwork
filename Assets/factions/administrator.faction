@@ -1,0 +1,8 @@
+{
+  "Title": "Administrator",
+  "Description": "A human Administrator advised by the Universal Union.",
+  "Tint": "1,0.78,0.39,1",
+  "Ranks": [ {"Title":"Administrator","Insignia":"","Enlists":false,"Promotes":false,"PromotesTo":"","Discharges":false} ],
+  "__references": [],
+  "__version": 0
+}

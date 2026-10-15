@@ -1,0 +1,34 @@
+# Compiled asset artifacts - s&box regenerates these from the sources on open.
+*.vmat_c
+*.vtex_c
+*.scene_c
+*.vmdl_c
+*.vsnd_c
+*.vpcf_c
+*.vmap_c
+*.vsmart_c
+*.shader_c
+
+# Build output
+bin/
+obj/
+
+# Editor-generated project files (the editor writes these itself)
+*.slnx
+Code/*.csproj
+Editor/*.csproj
+
+# Engine working state
+.sbox/cloud/
+.sbox/transient/
+.sbox/cloud.db
+
+# Junctioned library checkouts - these are links to other repos, never content.
+# BSPImport comes from DoctorGurke/sbox-bsp-import (MIT); hexagon from noahsabaj/hexagon.
+Libraries/BSPImport/
+Libraries/hexagon/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+*.user

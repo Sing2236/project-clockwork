@@ -1,0 +1,17 @@
+{
+  "UI": false,
+  "Volume": "1",
+  "Pitch": "1",
+  "Decibels": 75,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/combine/combine_soldier/die1.vsnd",
+    "sounds/combine/combine_soldier/die2.vsnd",
+    "sounds/combine/combine_soldier/die3.vsnd"
+  ],
+  "OcclusionEnabled": true,
+  "DistanceAttenuation": true,
+  "Distance": 1600,
+  "__references": [],
+  "__version": 1
+}
