@@ -45,15 +45,45 @@ public static class RequiredPackages
 	/// <summary>Set once the pass has begun, so the frame callback does not run it again.</summary>
 	private static bool _started;
 
+	/// <summary>When the editor's first frame was seen, so the install can wait a moment.</summary>
+	private static RealTimeSince _sinceLoaded;
+
+	/// <summary>Whether the settle clock has been started yet.</summary>
+	private static bool _clockStarted;
+
 	/// <summary>
-	/// Runs on the first frame after the editor assembly loads - which is to say once each time the
-	/// editor starts, or a tool is rebuilt. Installing is idempotent and skips anything already
-	/// present, so running it more often than strictly needed costs nothing.
+	/// How long to let the editor settle before installing.
+	///
+	/// <para>Installing on the very first frame collides with the editor's own start-up: it is
+	/// streaming textures as it loads, the packages land mid-stream, and the streaming list is
+	/// invalidated underneath it. The engine says so, once per texture -
+	/// <c>Skipping texture streaming: looks like the texture was reloaded while in the streaming
+	/// list</c> - which is a page of warnings for something that is only badly timed. Waiting lets
+	/// the start-up finish first.</para>
+	/// </summary>
+	private const float SettleSeconds = 8f;
+
+	/// <summary>
+	/// Runs once each time the editor starts, or a tool is rebuilt - after a short settle. Installing
+	/// is idempotent and skips anything already present, so running it more often than needed costs
+	/// nothing.
 	/// </summary>
 	[EditorEvent.Frame]
 	public static async void Ensure()
 	{
 		if ( _started ) return;
+
+		// The first frame only starts the clock, by resetting it - a RealTimeSince left at its
+		// default reads as having elapsed an enormous time, which would fire the wait on frame one
+		// and defeat the point.
+		if ( !_clockStarted )
+		{
+			_clockStarted = true;
+			_sinceLoaded = 0f;
+			return;
+		}
+
+		if ( _sinceLoaded < SettleSeconds ) return;
 		_started = true;
 
 		foreach ( var ident in Idents )
