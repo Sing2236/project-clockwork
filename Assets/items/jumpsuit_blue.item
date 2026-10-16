@@ -1,0 +1,11 @@
+{
+  "Title": "Blue Jumpsuit",
+  "Description": "The blue overalls the citizens wear in City 17.",
+  "Width": 1,
+  "Height": 1,
+  "Tint": "0.35,0.42,0.55,1",
+  "Wearable": "models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing",
+  "Wardrobe": true,
+  "__references": [],
+  "__version": 0
+}

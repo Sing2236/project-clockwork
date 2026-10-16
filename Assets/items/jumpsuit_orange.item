@@ -1,0 +1,11 @@
+{
+  "Title": "Orange Jumpsuit",
+  "Description": "The same overalls, dyed a burnt orange.",
+  "Width": 1,
+  "Height": 1,
+  "Tint": "0.52,0.34,0.18,1",
+  "Wearable": "clothing/jumpsuit_orange.clothing",
+  "Wardrobe": true,
+  "__references": [],
+  "__version": 0
+}

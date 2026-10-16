@@ -18,10 +18,17 @@ namespace Hl2rp;
 /// </summary>
 public sealed class FirstPerson : GameObjectSystem<FirstPerson>
 {
+	/// <summary>The action the engine watches to switch perspective. Bound to K in Input.config.</summary>
+	private const string ToggleAction = "ThirdPerson";
+
+	/// <summary>The pawn already set up, so the starting perspective is chosen once rather than
+	/// re-imposed every frame.</summary>
+	private Hexagon.Player _settled;
+
 	public FirstPerson( Scene scene ) : base( scene )
 	{
-		// Every frame is more often than needed, but the controller can be replaced when a
-		// character enters or leaves the city, and this has to survive that.
+		// Every frame because the controller can be replaced when a character enters or leaves the
+		// city, and the new one has to be set up too - but see below: it is only set up once each.
 		Listen( Stage.StartUpdate, 0, Enforce, nameof( FirstPerson ) );
 	}
 
@@ -33,6 +40,16 @@ public sealed class FirstPerson : GameObjectSystem<FirstPerson>
 		// The pawn may be disabled (out of sight, down, seated), so disabled components count.
 		if ( pawn.GetComponent<PlayerController>( true ) is not { } controller ) return;
 
+		// Only on a pawn we have not set up yet. Forcing this every frame was right while the view
+		// was pinned, but it also meant nothing could ever switch away from it - the engine's own
+		// toggle would flip ThirdPerson and this would flip it straight back. So the starting
+		// perspective is chosen once, and the switching is handed to the controller: setting
+		// ToggleCameraModeButton makes it watch that action and toggle itself, which is why the
+		// button does not need reading here.
+		if ( pawn == _settled ) return;
+		_settled = pawn;
+
 		controller.ThirdPerson = false;
+		controller.ToggleCameraModeButton = ToggleAction;
 	}
 }

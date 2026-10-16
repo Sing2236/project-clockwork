@@ -1,0 +1,19 @@
+{
+  "Title": "Orange Jumpsuit",
+  "Subtitle": "Citizen overalls",
+  "Model": "models/citizen_clothes/shirt/jumpsuit/models/jumpsuit.vmdl",
+  "HideBody": "Chest, Legs",
+  "SlotsUnder": "Chest, LeftArm, RightArm, Groin, LeftThigh, RightThigh, LeftKnee, RightKnee, LeftShin, RightShin",
+  "Tags": "citizen, jumpsuit",
+  "AllowTintSelect": true,
+  "TintSelection": {
+    "blend": "Linear",
+    "color": [
+      { "t": 0.0, "c": "0.48,0.26,0.09,1" },
+      { "t": 1.0, "c": "0.48,0.26,0.09,1" }
+    ],
+    "alpha": []
+  },
+  "TintDefault": 0.5,
+  "__version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "Title": "Green Jumpsuit",
+  "Description": "The same overalls, dyed a deep green.",
+  "Width": 1,
+  "Height": 1,
+  "Tint": "0.22,0.38,0.27,1",
+  "Wearable": "clothing/jumpsuit_green.clothing",
+  "Wardrobe": true,
+  "__references": [],
+  "__version": 0
+}
