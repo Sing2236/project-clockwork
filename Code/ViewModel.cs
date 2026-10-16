@@ -33,6 +33,19 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 		["models/weapons/sbox_assault_m4a1/w_m4a1.vmdl"] = "models/weapons/sbox_assault_m4a1/v_m4a1.vmdl",
 	};
 
+	/// <summary>
+	/// The animation a weapon fires with, by its world model. These are the model's own sequences -
+	/// v_usp carries 118 of them, including one-handed and two-handed fire, reloads, jumps and lands -
+	/// and which one is right is a property of the weapon rather than of the shot: a pistol fires
+	/// one-handed, a rifle two.
+	/// </summary>
+	private static readonly Dictionary<string, string> FireAnimation = new()
+	{
+		["models/weapons/sbox_pistol_usp/w_usp.vmdl"] = "1H_Fire_01",
+		["models/weapons/sbox_smg_mp5/w_mp5.vmdl"] = "2H_Fire_01",
+		["models/weapons/sbox_assault_m4a1/w_m4a1.vmdl"] = "2H_Fire_01",
+	};
+
 	/// <summary>Where the model rests, in the camera's own frame: forward, right, up.</summary>
 	private static readonly Vector3 Rest = new( 22f, 9f, -13f );
 
@@ -47,6 +60,7 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 
 	private GameObject _shown;
 	private string _model;
+	private string _held;
 
 	/// <summary>The sway still owed, in the camera's right and up.</summary>
 	private Vector2 _sway;
@@ -86,6 +100,7 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 			return;
 		}
 
+		_held = world;
 		if ( _model != eyeModel ) Clear();
 		if ( _shown is null )
 		{
@@ -103,6 +118,21 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 			_sway = Vector2.Zero;
 			_bob = 0f;
 			_lastPosition = pawn.WorldPosition;
+		}
+
+		// The shot. RequestAttack is an Rpc.Host, so the host runs the damage - but the press happens
+		// here first, and reading it here is what makes the animation immediate rather than a round trip.
+		if ( Input.Pressed( "Attack1" ) && _shown is not null )
+		{
+			var playing = _shown.Components.Get<SkinnedModelRenderer>( true );
+			if ( playing is not null && FireAnimation.TryGetValue( _held ?? "", out var fire )
+				&& playing.Sequence.SequenceNames.Contains( fire ) )
+			{
+				playing.Sequence.Name = fire;
+				playing.Sequence.Looping = false;
+			}
+
+			Flash( playing );
 		}
 
 		var rotation = camera.WorldRotation;
@@ -139,6 +169,33 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 			+ rotation.Up * ( Rest.z + _sway.y - bob.y );
 	}
 
+	/// <summary>
+	/// A brief light at the muzzle, for the length of one shot.
+	///
+	/// <para>The weapon models carry a real <c>muzzle</c> attachment - v_usp has <c>muzzle</c> and
+	/// <c>eject</c> - so the flash goes where the barrel actually points rather than at a guessed
+	/// offset. It is a light rather than a sprite or a particle because it needs no art to be
+	/// authored first, and it is what makes a shot read at night.</para>
+	/// </summary>
+	private void Flash( SkinnedModelRenderer renderer )
+	{
+		if ( renderer.Model?.GetAttachment( "muzzle" ) is not { } muzzle ) return;
+
+		// The attachment is in the model's own space, so it is carried out through the model's
+		// transform - which already holds the sway and the bob.
+		var at = _shown.WorldTransform.ToWorld( muzzle );
+
+		var flash = new GameObject( true, "Muzzle Flash" );
+		flash.WorldPosition = at.Position;
+		var light = flash.AddComponent<PointLight>();
+		light.LightColor = new Color( 1f, 0.85f, 0.55f );
+		light.Radius = 400f;
+		light.Shadows = false;
+
+		// One shot long, then gone. Nothing keeps a reference to it.
+		flash.AddComponent<ExpiresEffect>().Seconds = 0.05f;
+	}
+
 	/// <summary>The world model of whatever this pawn is holding, or null.</summary>
 	private static string HeldWorldModel( Hexagon.Player pawn )
 	{
@@ -157,6 +214,7 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 		_shown?.Destroy();
 		_shown = null;
 		_model = null;
+		_held = null;
 		_sway = Vector2.Zero;
 		_bob = 0f;
 	}
