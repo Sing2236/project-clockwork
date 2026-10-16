@@ -7,7 +7,8 @@
   "IncludeSourceFiles": false,
   "Resources": null,
   "PackageReferences": [
-    "kbj.hexagon"
+    "kbj.hexagon",
+    "playermodelports.metrocopclothes"
   ],
   "EditorReferences": null,
   "Mounts": null,

@@ -204,10 +204,66 @@ public sealed class CitizenNpc : Component
 			if ( !string.IsNullOrWhiteSpace( ModelPath ) )
 				return ModelPath;
 
+			// Civil Protection is the engine's own citizen wearing the metrocop suit - see
+			// <see cref="DressFor"/>. That is the state that has produced working armour; the
+			// civilians are the schema's human, which is a different body with its own clothing
+			// alternates, and mixing the two is what makes a helmet the wrong size.
 			return FactionPath.ToLowerInvariant().Contains( "civil_protection" )
-				? "combinesoldier/combine.vmdl"
+				? "models/citizen/citizen.vmdl"
 				: "models/citizen_human/citizen_human_male.vmdl";
 		}
+	}
+
+	/// <summary>
+	/// The Civil Protection uniform: the metrocop body armour, and a mask over the head.
+	///
+	/// <para>The armour is the state that works. Two things had to be added around it. The suit
+	/// carries no helmet, so the citizen's bare head sits above it - and simply hiding the head
+	/// leaves a hole, because nothing fills it. So our own copy of the suit (<c>cp_uniform</c>,
+	/// identical except that it also hides <c>Head</c>) clears the head away, and the gas mask is
+	/// what fills the space.</para>
+	///
+	/// <para>The mask has to be the right size, which is what <c>PrefersHuman</c> decides. Every
+	/// hat in the library ships two models - one for the engine citizen, one <c>_m_human</c> for the
+	/// schema's human - and picking the wrong pair is a helmet visibly too big for its body.</para>
+	/// </summary>
+	private const string Uniform =
+		"clothing/cp_uniform.clothing;" +
+		"models/citizen_clothes/hat/gasmask/gasmask.clothing";
+
+	/// <summary>
+	/// Puts him in his faction's uniform, where it has one.
+	///
+	/// <para>A body has to be one the engine will animate, and a uniform is clothing worn over it - so
+	/// Civil Protection is the engine's own citizen wearing the metrocop suit, not an imported
+	/// Combine model. This goes through <see cref="Hexagon.Looks.Apply"/>, the framework's own
+	/// dressing path, rather than a ClothingContainer built here: it is how every character in the
+	/// city is dressed, and it knows what cannot be worn together.</para>
+	/// </summary>
+	private void DressFor()
+	{
+		if ( !_renderer.IsValid() ) return;
+		if ( !FactionPath.ToLowerInvariant().Contains( "civil_protection" ) ) return;
+
+		// Dressed here rather than through Looks.Apply, which also sets the model - it takes it from
+		// the look and falls back to the engine's citizen, quietly replacing whatever BodyModel
+		// chose. Body and clothing have to agree, and this is the only place that decides both.
+		//
+		// PrefersHuman is the load-bearing line. False means the engine-citizen models, which is
+		// this body; true would hand it the `_m_human` pair, which is a mask built for a different
+		// head and reads as simply too big.
+		_renderer.Model = Sandbox.Model.Load( BodyModel );
+
+		var outfit = new ClothingContainer { PrefersHuman = false };
+		foreach ( var piece in Uniform.Split( ';', System.StringSplitOptions.RemoveEmptyEntries ) )
+		{
+			var clothing = ResourceLibrary.Get<Clothing>( piece.Trim() );
+			if ( clothing is not null ) outfit.Clothing.Add( new ClothingContainer.ClothingEntry( clothing ) );
+		}
+
+		var dresser = Dresser.GetOrCreate( _renderer );
+		dresser.UpdateAppearance( outfit );
+		dresser.Apply( outfit );
 	}
 
 	/// <summary>Hides or shows the model. When he is down, the body on the ground is the one to be
@@ -286,6 +342,12 @@ public sealed class CitizenNpc : Component
 				_renderer.UseAnimGraph = true;
 			}
 		}
+
+		// And what he wears, through the framework's own clothing system rather than by hand:
+		// Looks.Apply builds a ClothingContainer and dresses the renderer with a Dresser, which is
+		// how Hexagon dresses every character. Wearing the suit is what makes a citizen read as
+		// Civil Protection - the body is the engine's, and the uniform is the clothing asset.
+		DressFor();
 
 		// Linked explicitly, as Hexagon does: the automatic link runs before the child exists.
 		controller.Renderer = _renderer;
