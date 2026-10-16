@@ -204,10 +204,12 @@ public sealed class CitizenNpc : Component
 			if ( !string.IsNullOrWhiteSpace( ModelPath ) )
 				return ModelPath;
 
-			// Civil Protection is the engine's own citizen wearing the metrocop suit - see
-			// <see cref="DressFor"/>. That is the state that has produced working armour; the
-			// civilians are the schema's human, which is a different body with its own clothing
-			// alternates, and mixing the two is what makes a helmet the wrong size.
+			// This is only the fallback. What a CP unit actually ends up as is decided by his
+			// wardrobe, not here: DressFor dresses him, and Looks.Apply takes the body from that
+			// look. The HumanSkin piece is what puts him on the schema's human, which is the only
+			// way he gets the same head as everybody else - the engine citizen's is larger, and
+			// dressing the armour onto it is what produced a head and a mask that both read as
+			// oversized. Body and wardrobe have to agree, and wearing the body is how they do.
 			return FactionPath.ToLowerInvariant().Contains( "civil_protection" )
 				? "models/citizen/citizen.vmdl"
 				: "models/citizen_human/citizen_human_male.vmdl";
@@ -215,21 +217,34 @@ public sealed class CitizenNpc : Component
 	}
 
 	/// <summary>
-	/// The Civil Protection uniform: the metrocop body armour, and a mask over the head.
+	/// The metrocop body armour, from the workshop's <c>playermodelports.metrocopclothes</c>.
 	///
-	/// <para>The armour is the state that works. Two things had to be added around it. The suit
-	/// carries no helmet, so the citizen's bare head sits above it - and simply hiding the head
-	/// leaves a hole, because nothing fills it. So our own copy of the suit (<c>cp_uniform</c>,
-	/// identical except that it also hides <c>Head</c>) clears the head away, and the gas mask is
-	/// what fills the space.</para>
-	///
-	/// <para>The mask has to be the right size, which is what <c>PrefersHuman</c> decides. Every
-	/// hat in the library ships two models - one for the engine citizen, one <c>_m_human</c> for the
-	/// schema's human - and picking the wrong pair is a helmet visibly too big for its body.</para>
+	/// <para>This is the piece that works. What it does not do is cover the head: it hides
+	/// <c>Chest, Legs, Hands, Feet</c> and carries no helmet, so a CP unit keeps the citizen's bare
+	/// head above the armour. <c>Assets/clothing/cp_uniform.clothing</c> is our own copy of it,
+	/// kept for that experiment; it is not currently worn.</para>
 	/// </summary>
-	private const string Uniform =
-		"clothing/cp_uniform.clothing;" +
-		"models/citizen_clothes/hat/gasmask/gasmask.clothing";
+	private const string MetrocopSuit = "playermodels/metrocop_clothes/metrocop_clothes.clothing";
+
+	/// <summary>
+	/// The skin he wears under the armour, and the thing that decides his body.
+	///
+	/// <para>A "human" piece is the library's way of saying which body a character has: it carries
+	/// <c>HasHumanSkin</c> and names the schema's human as its <c>HumanSkinModel</c>. Wearing it is
+	/// what gives a CP unit the same head as everyone else rather than the engine citizen's.</para>
+	/// </summary>
+	private const string HumanSkin = "models/citizen_clothes/body/human01.clothing";
+
+	/// <summary>
+	/// The mask over the face, worn on the human body the skin piece gives him.
+	///
+	/// <para>Its size is not a property of the mask: every hat in the library ships two models, one
+	/// for the engine's citizen and one <c>_m_human</c> for the schema's human, and the dresser
+	/// picks between them from the body. Worn on the human, the human pair is the one that fits -
+	/// on the engine citizen it came out visibly oversized, which is what the earlier attempts ran
+	/// into.</para>
+	/// </summary>
+	private const string GasMask = "models/citizen_clothes/hat/gasmask/gasmask.clothing";
 
 	/// <summary>
 	/// Puts him in his faction's uniform, where it has one.
@@ -245,25 +260,13 @@ public sealed class CitizenNpc : Component
 		if ( !_renderer.IsValid() ) return;
 		if ( !FactionPath.ToLowerInvariant().Contains( "civil_protection" ) ) return;
 
-		// Dressed here rather than through Looks.Apply, which also sets the model - it takes it from
-		// the look and falls back to the engine's citizen, quietly replacing whatever BodyModel
-		// chose. Body and clothing have to agree, and this is the only place that decides both.
-		//
-		// PrefersHuman is the load-bearing line. False means the engine-citizen models, which is
-		// this body; true would hand it the `_m_human` pair, which is a mask built for a different
-		// head and reads as simply too big.
-		_renderer.Model = Sandbox.Model.Load( BodyModel );
-
-		var outfit = new ClothingContainer { PrefersHuman = false };
-		foreach ( var piece in Uniform.Split( ';', System.StringSplitOptions.RemoveEmptyEntries ) )
-		{
-			var clothing = ResourceLibrary.Get<Clothing>( piece.Trim() );
-			if ( clothing is not null ) outfit.Clothing.Add( new ClothingContainer.ClothingEntry( clothing ) );
-		}
-
-		var dresser = Dresser.GetOrCreate( _renderer );
-		dresser.UpdateAppearance( outfit );
-		dresser.Apply( outfit );
+		// The framework's own dressing path, and the only one that has produced armour. It chooses
+		// the body itself, from the look rather than from BodyModel - and the way to choose it is to
+		// wear it, which is what the human-skin piece does: it names the schema's human as its
+		// HumanSkinModel, and ModelOf reads exactly that. So CP wears the human as his skin, and
+		// gets its head - the same head everybody else in the city has - rather than the engine
+		// citizen's larger one, which is what BodyModel's own citizen used to give him.
+		Hexagon.Looks.Apply( _renderer, $"{BodyModel};{HumanSkin};{MetrocopSuit};{GasMask}" );
 	}
 
 	/// <summary>Hides or shows the model. When he is down, the body on the ground is the one to be

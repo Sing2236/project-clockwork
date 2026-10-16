@@ -2,7 +2,11 @@
   "Title": "Civil Protection Uniform",
   "Subtitle": "",
   "Model": "playermodels/metrocop_clothes/metrocop_clothes.vmdl",
-  "HideBody": "Head, Chest, Legs, Hands, Feet",
+
+  "HasHumanSkin": true,
+  "HumanSkinModel": "models/citizen_human/citizen_human_male.vmdl",
+
+  "HideBody": "Chest, Legs, Hands, Feet",
   "SlotsUnder": "Skin, Chest, LeftArm, RightArm, LeftWrist, RightWrist, LeftHand, RightHand, Groin, LeftThigh, RightThigh, LeftKnee, RightKnee, LeftShin, RightShin, LeftFoot, RightFoot, Waist, Head",
   "SlotsOver": "Skin, Chest, LeftArm, RightArm, LeftWrist, RightWrist, LeftHand, RightHand, Groin, LeftThigh, RightThigh, LeftKnee, RightKnee, LeftShin, RightShin, LeftFoot, RightFoot, Waist, Head",
   "Tags": "",
