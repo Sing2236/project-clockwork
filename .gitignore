@@ -8,6 +8,9 @@
 *.vmap_c
 *.vsmart_c
 *.shader_c
+*.clothing_c
+*.item_c
+*.faction_c
 
 # Build output
 bin/
