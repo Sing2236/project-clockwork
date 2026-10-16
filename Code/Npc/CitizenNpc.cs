@@ -247,6 +247,63 @@ public sealed class CitizenNpc : Component
 	private const string GasMask = "models/citizen_clothes/hat/gasmask/gasmask.clothing";
 
 	/// <summary>
+	/// What the civilians wear. Each is a whole look - a human skin first, then clothes - because
+	/// that is what the dressing path takes, and because the skin is what decides the body.
+	///
+	/// <para>The blue jumpsuit the citizens wear in Half-Life 2 - the same overalls over the same
+	/// shirts, which is what makes a crowd of them read as City 17 rather than as a crowd of
+	/// individuals. The only thing that varies is the skin underneath, so the city does not look
+	/// like one person repeated.</para>
+	///
+	/// <para>Which one a citizen wears is settled by his name, so he keeps it across restarts
+	/// rather than changing clothes every time the city loads.</para>
+	/// </summary>
+	private static readonly string[] CitizenOutfits =
+	{
+		"models/citizen_clothes/body/human01.clothing;" +
+		"models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing;" +
+		"models/citizen_clothes/shoes/boots/black_boots.clothing",
+
+		"models/citizen_clothes/body/human03.clothing;" +
+		"models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing;" +
+		"models/citizen_clothes/shoes/boots/army_boots.clothing",
+
+		"models/citizen_clothes/body/human05.clothing;" +
+		"models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing;" +
+		"models/citizen_clothes/shoes/boots/black_boots.clothing",
+
+		"models/citizen_clothes/body/human02.clothing;" +
+		"models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing;" +
+		"models/citizen_clothes/shoes/boots/army_boots.clothing",
+
+		"models/citizen_clothes/body/human06.clothing;" +
+		"models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing;" +
+		"models/citizen_clothes/shoes/boots/black_boots.clothing",
+
+		"models/citizen_clothes/body/human04.clothing;" +
+		"models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing;" +
+		"models/citizen_clothes/shoes/boots/army_boots.clothing",
+
+		"models/citizen_clothes/body/human07.clothing;" +
+		"models/citizen_clothes/shirt/jumpsuit/blue_jumpsuit.clothing;" +
+		"models/citizen_clothes/shoes/boots/black_boots.clothing",
+	};
+
+	/// <summary>
+	/// Which outfit a civilian wears, settled by his name.
+	///
+	/// <para>Not <c>string.GetHashCode</c>: that is randomised per process, so a citizen would wear
+	/// something different every launch. A plain sum of the characters is stable, and stable is the
+	/// whole point - he should look the same when the city reloads.</para>
+	/// </summary>
+	private string OutfitFor( string name )
+	{
+		var sum = 0;
+		foreach ( var c in name ) sum = ( sum + c ) % 4096;
+		return CitizenOutfits[sum % CitizenOutfits.Length];
+	}
+
+	/// <summary>
 	/// Puts him in his faction's uniform, where it has one.
 	///
 	/// <para>A body has to be one the engine will animate, and a uniform is clothing worn over it - so
@@ -258,7 +315,6 @@ public sealed class CitizenNpc : Component
 	private void DressFor()
 	{
 		if ( !_renderer.IsValid() ) return;
-		if ( !FactionPath.ToLowerInvariant().Contains( "civil_protection" ) ) return;
 
 		// The framework's own dressing path, and the only one that has produced armour. It chooses
 		// the body itself, from the look rather than from BodyModel - and the way to choose it is to
@@ -266,7 +322,15 @@ public sealed class CitizenNpc : Component
 		// HumanSkinModel, and ModelOf reads exactly that. So CP wears the human as his skin, and
 		// gets its head - the same head everybody else in the city has - rather than the engine
 		// citizen's larger one, which is what BodyModel's own citizen used to give him.
-		Hexagon.Looks.Apply( _renderer, $"{BodyModel};{HumanSkin};{MetrocopSuit};{GasMask}" );
+		if ( FactionPath.ToLowerInvariant().Contains( "civil_protection" ) )
+		{
+			Hexagon.Looks.Apply( _renderer, $"{BodyModel};{HumanSkin};{MetrocopSuit};{GasMask}" );
+			return;
+		}
+
+		// Everyone else wears ordinary city clothes - see CitizenOutfits. His outfit starts with a
+		// human skin for the same reason CP's does: it is what decides which body he has.
+		Hexagon.Looks.Apply( _renderer, OutfitFor( CitizenName ) );
 	}
 
 	/// <summary>Hides or shows the model. When he is down, the body on the ground is the one to be
