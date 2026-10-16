@@ -219,10 +219,10 @@ public sealed class CitizenNpc : Component
 	/// <summary>
 	/// The metrocop body armour, from the workshop's <c>playermodelports.metrocopclothes</c>.
 	///
-	/// <para>This is the piece that works. What it does not do is cover the head: it hides
-	/// <c>Chest, Legs, Hands, Feet</c> and carries no helmet, so a CP unit keeps the citizen's bare
-	/// head above the armour. <c>Assets/clothing/cp_uniform.clothing</c> is our own copy of it,
-	/// kept for that experiment; it is not currently worn.</para>
+	/// <para>He wears the schema's human under it - see <see cref="HumanSkin"/> - which is what puts
+	/// him on the same body, and so the same head, as everybody else. The armour itself covers only
+	/// <c>Chest, Legs, Hands, Feet</c> and carries no helmet, so the head shows above it; the gas mask
+	/// is what covers that.</para>
 	/// </summary>
 	private const string MetrocopSuit = "playermodels/metrocop_clothes/metrocop_clothes.clothing";
 
