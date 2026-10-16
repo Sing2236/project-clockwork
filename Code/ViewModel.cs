@@ -133,6 +133,7 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 			}
 
 			Flash( playing );
+			Mark( camera, pawn );
 		}
 
 		var rotation = camera.WorldRotation;
@@ -194,6 +195,85 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 
 		// One shot long, then gone. Nothing keeps a reference to it.
 		flash.AddComponent<ExpiresEffect>().Seconds = 0.05f;
+	}
+
+	/// <summary>Where a shot leaves a mark: a hole in the wall, or blood on a person.</summary>
+	private static readonly string[] ImpactMarks =
+	{
+		"decals/impact/ceramic/decal_impact_ceramic_01.decal",
+		"decals/impact/concrete/decal_impact_concrete_01.decal",
+		"decals/impact/metal/decal_impact_metal_01.decal",
+	};
+
+	private static readonly string[] BloodMarks =
+	{
+		"decals/blood/blood_splatter_01.decal",
+		"decals/blood/blood_splatter_02.decal",
+		"decals/blood/blood_splatter_03.decal",
+		"decals/blood/blood_splatter_04.decal",
+	};
+
+	/// <summary>How long a mark stays. Long enough to read the room, short enough not to pile up.</summary>
+	private const float MarkSeconds = 45f;
+
+	/// <summary>
+	/// Where the shot landed, marked on whatever it hit.
+	///
+	/// <para>The host already traced this - RequestAttack does its own trace and applies the damage -
+	/// but it never says where the trace went, so nothing on this side can know. So the shot is traced
+	/// again here, the same way: from the eye, along the aim, out to the weapon's own range, against
+	/// hitboxes and past the capsule that is only for walking into. The host's trace remains the
+	/// authority on harm; this one is only for what it looks like.</para>
+	/// </summary>
+	private void Mark( CameraComponent camera, Hexagon.Player pawn )
+	{
+		var definition = HeldDefinition( pawn );
+		var range = definition?.Range ?? 1500f;
+
+		var from = camera.WorldPosition;
+		var direction = camera.WorldRotation.Forward;
+		var trace = Scene.Trace.Ray( from, from + direction * range )
+			.UseHitboxes()
+			.WithoutTags( "capsule" )
+			.IgnoreGameObjectHierarchy( pawn.GameObject )
+			.Run();
+
+		if ( !trace.Hit ) return;
+
+		// A person is marked in blood; anything else takes a hole.
+		var person = trace.GameObject?.GetComponentInParent<Hexagon.CharacterBody>() is not null;
+		var pool = person ? BloodMarks : ImpactMarks;
+		var chosen = pool[ Game.Random.Int( 0, pool.Length - 1 ) ];
+		var decal = ResourceLibrary.Get<DecalDefinition>( chosen );
+		if ( decal is null ) return;
+
+		var mark = new GameObject( true, person ? "Blood" : "Bullet Hole" );
+		mark.WorldPosition = trace.HitPosition;
+		// Faces back along the surface it landed on, with a little scatter so two shots in one place
+		// do not sit exactly on top of each other.
+		mark.WorldRotation = Rotation.LookAt( -trace.Normal ) * Rotation.FromYaw( Game.Random.Float( -180f, 180f ) ) * Rotation.FromRoll( Game.Random.Float( 0f, 360f ) );
+
+		var decalComponent = mark.AddComponent<Decal>();
+		decalComponent.Decals = new List<DecalDefinition> { decal };
+		decalComponent.Size = person ? new Vector2( 22f, 22f ) : new Vector2( 9f, 9f );
+		decalComponent.Depth = 12f;
+
+		mark.AddComponent<ExpiresEffect>().Seconds = MarkSeconds;
+	}
+
+	/// <summary>The definition of whatever is held, found by the model it draws with.</summary>
+	private static Hexagon.ItemDefinition HeldDefinition( Hexagon.Player pawn )
+	{
+		var world = HeldWorldModel( pawn );
+		if ( world is null ) return null;
+
+		foreach ( var d in ResourceLibrary.GetAll<Hexagon.ItemDefinition>() )
+		{
+			if ( d?.WorldModel is null ) continue;
+			if ( d.WorldModel.ResourcePath == world ) return d;
+		}
+
+		return null;
 	}
 
 	/// <summary>The world model of whatever this pawn is holding, or null.</summary>
