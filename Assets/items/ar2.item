@@ -9,7 +9,7 @@
   "Range": 3200,
   "Cooldown": 0.12,
   "Ammo": "items/ar2_round.item",
-  "WorldModel": "hl2_combine/models/weapons/w_ar2.vmdl",
+  "WorldModel": "models/weapons/sbox_assault_m4a1/w_m4a1.vmdl",
   "HoldType": "Rifle",
   "__references": [],
   "__version": 0

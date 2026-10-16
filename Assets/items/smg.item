@@ -9,7 +9,7 @@
   "Range": 2200,
   "Cooldown": 0.08,
   "Ammo": "items/smg_round.item",
-  "WorldModel": "hl2_combine/models/weapons/w_smg1.vmdl",
+  "WorldModel": "models/weapons/sbox_smg_mp5/w_mp5.vmdl",
   "HoldType": "Rifle",
   "__references": [],
   "__version": 0

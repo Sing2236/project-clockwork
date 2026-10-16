@@ -12,6 +12,5 @@
   "__references": [],
   "__version": 0,
   "HoldType": "Pistol",
-  "WorldModel": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
-  "ViewModel": "models/weapons/sbox_pistol_usp/v_usp.vmdl"
+  "WorldModel": "models/weapons/sbox_pistol_usp/w_usp.vmdl"
 }

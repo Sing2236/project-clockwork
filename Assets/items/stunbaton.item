@@ -10,5 +10,6 @@
   "Cooldown": 1.0,
   "HoldType": "Swing",
   "__references": [],
-  "__version": 0
+  "__version": 0,
+  "WorldModel": "models/3dmodelscc0/meleeweaponspack/policebaton/policebaton.vmdl"
 }
