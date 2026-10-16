@@ -255,8 +255,8 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 
 		var decalComponent = mark.AddComponent<Decal>();
 		decalComponent.Decals = new List<DecalDefinition> { decal };
-		decalComponent.Size = person ? new Vector2( 22f, 22f ) : new Vector2( 9f, 9f );
-		decalComponent.Depth = 12f;
+		decalComponent.Size = person ? new Vector2( 14f, 14f ) : new Vector2( 6f, 6f );
+		decalComponent.Depth = 10f;
 
 		mark.AddComponent<ExpiresEffect>().Seconds = MarkSeconds;
 	}
