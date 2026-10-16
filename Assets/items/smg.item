@@ -1,0 +1,16 @@
+{
+  "Title": "SMG",
+  "Description": "A Combine submachine gun.",
+  "Width": 2,
+  "Height": 1,
+  "Tint": "0.13,0.14,0.15,1",
+  "Damage": 14,
+  "Lethal": true,
+  "Range": 2200,
+  "Cooldown": 0.08,
+  "Ammo": "items/smg_round.item",
+  "WorldModel": "hl2_combine/models/weapons/w_smg1.vmdl",
+  "HoldType": "Rifle",
+  "__references": [],
+  "__version": 0
+}

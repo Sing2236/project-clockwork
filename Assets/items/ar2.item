@@ -1,0 +1,16 @@
+{
+  "Title": "AR2",
+  "Description": "An Overwatch pulse rifle.",
+  "Width": 3,
+  "Height": 1,
+  "Tint": "0.12,0.13,0.15,1",
+  "Damage": 32,
+  "Lethal": true,
+  "Range": 3200,
+  "Cooldown": 0.12,
+  "Ammo": "items/ar2_round.item",
+  "WorldModel": "hl2_combine/models/weapons/w_ar2.vmdl",
+  "HoldType": "Rifle",
+  "__references": [],
+  "__version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "Title": "SMG round",
+  "Description": "One 9mm SMG round.",
+  "Width": 1,
+  "Height": 1,
+  "Tint": "0.7,0.6,0.3,1",
+  "MaxStack": 45,
+  "__references": [],
+  "__version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "Title": "Pulse round",
+  "Description": "One AR2 pulse round.",
+  "Width": 1,
+  "Height": 1,
+  "Tint": "0.35,0.55,0.8,1",
+  "MaxStack": 45,
+  "__references": [],
+  "__version": 0
+}

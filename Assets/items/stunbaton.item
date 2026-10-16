@@ -1,0 +1,14 @@
+{
+  "Title": "Stun baton",
+  "Description": "A Civil Protection stun baton.",
+  "Width": 2,
+  "Height": 1,
+  "Tint": "0.22,0.22,0.25,1",
+  "Damage": 18,
+  "Lethal": false,
+  "Range": 90,
+  "Cooldown": 1.0,
+  "HoldType": "Swing",
+  "__references": [],
+  "__version": 0
+}

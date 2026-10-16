@@ -333,6 +333,31 @@ public sealed class CitizenNpc : Component
 		Hexagon.Looks.Apply( _renderer, OutfitFor( CitizenName ) );
 	}
 
+	/// <summary>
+	/// What a Civil Protection unit carries. A sidearm and a stun baton: the two things a unit is
+	/// never without, and the two he is trusted with before anything else.
+	///
+	/// <para>Issued through the framework's own transfer path rather than written into his document
+	/// by hand, so it lands in the journal like anything else that enters the city. Issued only when
+	/// he does not already have one, because this runs every time the city loads and a unit should
+	/// not accumulate a pistol per restart.</para>
+	/// </summary>
+	private void IssueLoadout( Hexagon.Logic.CharacterData character )
+	{
+		if ( !FactionPath.ToLowerInvariant().Contains( "civil_protection" ) ) return;
+		if ( Hexagon.HexagonServices.Current?.Transfers is not { } transfers ) return;
+
+		foreach ( var path in new[] { "items/pistol.item", "items/stunbaton.item" } )
+		{
+			if ( character.Inventory.Items.Any( item => item.Definition == path ) ) continue;
+
+			// Actor and Sources sit with the framework's rule layer rather than with its components,
+			// which is why they are `Hexagon.Logic` and ItemDefinition is not.
+			Hexagon.ItemDefinition.Find( path )
+				?.IssueTo( transfers, Hexagon.Logic.Sources.Arrival, character, Hexagon.Logic.Actor.Of( character ) );
+		}
+	}
+
 	/// <summary>Hides or shows the model. When he is down, the body on the ground is the one to be
 	/// seen; when he is dead there is nothing of him left to show.</summary>
 	public void HideBody( bool hidden )
@@ -475,6 +500,8 @@ public sealed class CitizenNpc : Component
 			shapes.Renderer = _renderer;
 			shapes.Target = GameObject;
 		}
+
+		IssueLoadout( character );
 
 		// Who he has become, if this is not his first evening in the city.
 		NpcNotes.Apply( character.Id, this );
