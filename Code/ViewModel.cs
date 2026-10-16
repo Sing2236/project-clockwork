@@ -72,8 +72,13 @@ public sealed class ViewModel : GameObjectSystem<ViewModel>
 		{
 			// On the camera, so it follows the eye without being told to each frame.
 			_shown = new GameObject( Scene.Camera.GameObject, true, "ViewModel" );
-			var renderer = _shown.AddComponent<ModelRenderer>();
+
+			// SkinnedModelRenderer, not ModelRenderer: these models carry a rig and an anim graph of
+			// their own (v_usp has 77 bones and its own v_usp.vanmgrph), and a plain ModelRenderer has
+			// no animator to run it - which is what left the gun a static prop in mid-air.
+			var renderer = _shown.AddComponent<SkinnedModelRenderer>();
 			renderer.Model = Model.Load( eyeModel );
+			renderer.UseAnimGraph = true;
 			_model = eyeModel;
 		}
 
